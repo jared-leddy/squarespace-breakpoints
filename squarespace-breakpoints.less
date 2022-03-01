@@ -1,0 +1,28 @@
+/**
+Squarespace essentially doesn't really document their breakpoints.
+This can be quite annoying to not have when doing custom CSS.
+Most themes use essentially one breakpoint. Mobile and not mobile; anything 750 and below is considered mobile.
+You can use these to write your own CSS and simply use the "Style Editor" to inject your compiled CSS in the event
+you are not using "Developer Mode" in your site.
+Enjoy!
+*/
+@mobile:          ~"only screen and (max-width: 750px)";
+@tablet:          ~"only screen and (min-width: 751px)";
+@tablet-strict:   ~"only screen and (min-width: 751px) and (max-width: 949px)";
+@tablet-desktop:  ~"only screen and (min-width: 751px)";
+@desktop:         ~"only screen and (min-width: 950px)";
+@desktop-strict:  ~"only screen and (min-width: 950px) and (max-width: 1199px)";
+@desktop-xl:      ~"only screen and (min-width: 1200px)";
+
+// Usage
+@media @mobile {
+  // Code here
+}
+
+@media @tablet-strict {
+  // Code here
+}
+
+@media @desktop {
+  // Code here
+}
